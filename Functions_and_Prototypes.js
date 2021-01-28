@@ -1,19 +1,18 @@
 // Constructor function
-function Person (first, last, eye) {
+function Person (first, last, eye, birthYear) {
     this.firstName = first;
     this.lastName = last;
     this.eyeColor = eye;
+    this.birthYear = birthYear;
 }
 
-var myFriend = new Person ("Mike", "Watts", "blue");
-
-// Creating new property
-myFriend.birthYear = 1980
-console.log(myFriend.birthYear);
+var myFriend = new Person ("Mike", "Watts", "blue", 1980);
 
 // Creating new Object
-var myCousin = new Person("Jane", "Doe", "green")
+var myCousin = new Person("Jane", "Doe", "green", 1990)
 console.log(myCousin);
+var emp1 = new Person("Andrew", "Jones", "black", 1977);
+console.log(emp1);
 
 document.getElementById('display1').innerHTML = "I have a friend " + myFriend.firstName + " " + myFriend.lastName + " who has " + myFriend.eyeColor + " eyes.";
 document.getElementById('display2').innerHTML = "I have a cousin " + myCousin.firstName + " " + myCousin.lastName + " who has " + myCousin.eyeColor + " eyes.";
